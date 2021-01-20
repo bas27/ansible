@@ -21,3 +21,9 @@ git remote add origin https://github.com/ИМЯ_ПОЛЬЗОВАТЕЛЯ/ИМЯ_
 git push -u origin master
 ```
 
+```
+openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
+    -subj /CN=localhost \
+    -keyout files/nginx.key -out files/nginx.crt
+```
+
